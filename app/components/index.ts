@@ -6,4 +6,4 @@ import Footer from "./footer.component";
 import Link from "./link.component";
 import Button from "./button.component";
 import Work from "./work.component";
-export { Profile, Aboutme, Experience, Skills ,Footer,Button,Link,Work};
+export { Profile, Aboutme, Experience, Skills, Footer, Button, Link, Work };
