@@ -1,3 +1,4 @@
 import Profile from "./profile.component";
-
-export { Profile }
+import Aboutme from "./Aboutme.component";
+import Experience from "./Experience.component";
+export { Profile, Aboutme, Experience }
