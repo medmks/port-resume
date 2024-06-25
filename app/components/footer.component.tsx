@@ -32,7 +32,7 @@ const Footer = () => {
           { name: "GitHub", link: "https://github.com/pillow" },
           { name: "Email", link: "mailto:pillow@posteo.net" },
         ].map((link, i) => (
-          <Link key={i} link={link} />
+          <Link key={i} link={link} index={i + 1} />
         ))}
       </div>
     </section>

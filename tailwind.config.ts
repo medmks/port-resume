@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         outfit: ["Outfit", "serif"],
+        inter: ["Inter", "serif"],
         outfitsubtext: ["Outfit", "Inter", "serif"],
       },
     },

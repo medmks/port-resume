@@ -33,7 +33,7 @@ const Work = () => {
     <>
       <motion.section variants={textVariant(0.5)}>
         <h2 className={`${styles.sectionHeadText}`}>Work</h2>
-        <div className="mt-20 flex flex-wrap gap-7">
+        <div className=" mt-10 flex flex-wrap gap-7">
           {[{ image: jobit, source_code_link: "https://github.com" }].map(
             (work, index) => {
               return <ProjectCard key={index} project={work} index={index} />;

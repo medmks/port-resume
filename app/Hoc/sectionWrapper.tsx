@@ -10,7 +10,7 @@ const SectionWrapper = ({ Component, id }: TSectionWrapperProps) =>
     return (
       <motion.section
         id={id}
-        className={`  ${styles.padding} max-w-7xl mx-auto relative z-0`}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

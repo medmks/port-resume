@@ -17,7 +17,7 @@ const Skill = () => {
         <div className="relative w-full  mx-auto  ">
           <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
           {/* Todo: add skills */}
-          <div className="flex flex-wrap gap-2 mt-3 min-w-[477px] ">
+          <div className="flex flex-wrap gap-5 mt-5 min-w-[477px] ">
             {skills.map((skill, i) => (
               <div className="  border border-gray-500  p-3 w-fit" key={i}>
                 <p className={`${styles.sectionSubText}`}>{skill.title}</p>
