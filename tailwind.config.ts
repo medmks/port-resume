@@ -5,11 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        customColor: '#0e1010',
+        customColor: "#0e1010",
       },
       fontFamily: {
-        'outfit': ["Outfit", "serif"],
-        'outfitsubtext': ["Outfit", "Inter", "serif"],
+        outfit: ["Outfit", "serif"],
+        outfitsubtext: ["Outfit", "Inter", "serif"],
       },
     },
   },
