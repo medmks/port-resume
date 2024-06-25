@@ -3,8 +3,11 @@ import { staggerContainer } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
 import { skills } from "~/constants";
 import { SectionWrapper } from "~/Hoc";
+import Divider from "./Divider.component";
 const Skill = () => {
   return (
+          <>
+            
     <motion.section
       variants={staggerContainer()}
       initial="hidden"
@@ -23,7 +26,9 @@ const Skill = () => {
           ))}
         </div>
       </div>
-    </motion.section>
+    </motion.section>   
+    <Divider/>    
+</>
   );
 };
 
