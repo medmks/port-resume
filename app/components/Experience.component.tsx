@@ -12,23 +12,23 @@ const ExperienceCard = ({
   index: number;
 }) => {
   return (
-    <div className=" w-full flex md:flex-row flex-col justify-start gap-3 mt- ">
+    <div className=" w-full flex md:flex-row flex-col justify-start gap-3 mt-7 ">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className=" green-pink-gradient   rounded-full p-1 shadow-card"
+        className=" green-pink-gradient  flex justify-center  rounded-full p-1 shadow-card"
       >
-        <div className="rounded-full flex justify-center  ">
+        
           <img
-            className="rounded-full w-28 h-28 lg:w-24 lg:h-24 object-cover shadow-lg min-w-fit border border-gray-500"
+            className="rounded-full w-28 h-28 lg:w-24 lg:h-24 object-cover  border border-gray-500"
             src={exprience.icon}
-            alt="rfr"
+            alt={exprience.company_name}
           />
-        </div>
+      
       </motion.div>
 
       <div className="flex flex-col w-full md:w-fit gap-2 text-center md:text-left ">
         <motion.div variants={textVariant(index)} className="">
-          <h1 className={`${styles.sectionHeadText}`}>
+          <h1 className={`${styles.roletext}`}>
             {exprience.company_name}{" "}
           </h1>
         </motion.div>
@@ -71,7 +71,7 @@ const Experience = () => {
       >
         <div className="relative w-full  mx-auto  ">
           <h2 className={`${styles.sectionHeadText}`}>Experience</h2>
-          <div className=" flex flex-col lg:flex-row mt-7 ">
+          <div className=" flex flex-col lg:flex-row  ">
             {experiences.map((exprience,i) => {
               return (
                 <ExperienceCard

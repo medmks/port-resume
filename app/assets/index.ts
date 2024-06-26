@@ -1,2 +1,3 @@
 import jobit from "./jobit.png";
-export { jobit };
+import watermelon from "./watermelon-palestine.gif";
+export { jobit, watermelon};
