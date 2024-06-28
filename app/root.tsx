@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "./tailwind.css";
+import { ThemeModeScript } from "flowbite-react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -34,6 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
       </body>
+      <ThemeModeScript />
     </html>
   );
 }
