@@ -2,12 +2,17 @@ import { motion } from "framer-motion";
 import { fadeIn } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
 
-const Link = ({ link ,index}: { link: { name: string; link: string } ,index:number}) => {
+const Link = ({
+  link,
+  index,
+}: {
+  link: { name: string; link: string };
+  index: number;
+}) => {
   return (
     <motion.div
       className="flex items-center z-20  gap-1"
       variants={fadeIn("left", "", 1, index * 0.3)}
-
     >
       <a href={link.link} className={`${styles.sublink}`}>
         {" "}
