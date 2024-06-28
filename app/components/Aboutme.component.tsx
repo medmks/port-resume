@@ -8,15 +8,13 @@ import Divider from "./Divider.component";
 const Aboutme = () => {
   return (
     <>
-      <motion.div 
-        variants={fadeIn("right", "spring", 0.5 * 1, 0.75)}
-        >
+      <motion.div variants={fadeIn("right", "spring", 0.5 * 1.1, 0.75)}>
         {/* <p className={`${styles.sectionSubText}`}>Introduction</p> */}
         <h2 className={`${styles.sectionHeadText}`}>About me</h2>
       </motion.div>
 
       <motion.p
-        variants={textVariant(1)}
+        variants={textVariant(1.4)}
         className={`${styles.sectionSubText} mt-7`}
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat

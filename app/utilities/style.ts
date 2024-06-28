@@ -11,10 +11,13 @@ const styles = {
     "text-[#adc3df] font-outfit font-medium lg:text-[24px] sm:text-[18px]  xs:text-[20px] text-[24px] lg:leading-[25px] ",
   sectionHeadText:
     "font-outfit text-white font-semibold  md:text-[30px] sm:text-[30px] xs:text-[40px] text-[28px]",
-  roletext:"font-outfit text-white font-normal  md:text-[30px] sm:text-[30px] xs:text-[40px] text-[28px]",
+  roletext:
+    "font-outfit text-white font-normal  md:text-[30px] sm:text-[30px] xs:text-[40px] text-[28px]",
   // sectionSubText:
   //   "sm:text-[20px] font-outfitsubtext font-extralight  text-[18px] text-[#DADDE7]  text-white tracking-wider       ",
-  sectionSubText:"font-outfitsubtext font-light sm:text-[23px] text-[22px] tracking-wider text-[#DADDE7] "
+  sectionSubText:
+    "font-outfitsubtext font-light sm:text-[23px] text-[22px] tracking-wider text-[#DADDE7] ",
+  Modalalbel:" font-outfitsubtext font-normal sm:text-[14px] text-[14px] tracking-wider text-[#DADDE7]"
 };
 
 export { styles };
