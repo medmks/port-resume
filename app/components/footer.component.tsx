@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import { SectionWrapper } from "~/Hoc";
-import { fadeIn } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
 import Link from "./link.component";
 import { watermelon } from "~/assets";
@@ -8,24 +6,24 @@ import ModalComponent from "./Modal.component";
 
 const Footer = () => {
   return (
-    <>
-      <footer className=" flex justify-center flex-col items-center text-center gap-4">
-        <motion.div
+
+      <footer className=" flex justify-center flex-col items-center text-center gap-4 w-full ">
+        <div
           // variants={fadeIn("top", "", 0.5, 1)}
           className={`${styles.sectionSubText}  `}
         >
           <h1 className={`${styles.heroHeadText} `}>
             Let&apos;s create something together
           </h1>
-        </motion.div>
-        <motion.p
+        </div>
+        <p
           // variants={fadeIn("button", "", 0.7, 1)}
           className={`${styles.sectionSubText} `}
         >
           Thank you for checking out my portfolio website. If you have any
           questions or would like to discuss a potential collaboration, please
           feel free to reach out to me at
-        </motion.p>
+        </p>
         <div className=" relative">
           <ModalComponent />
         </div>
@@ -40,15 +38,15 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-transparent  ">
+        <div className="border-transparent mb-10 ">
           <img
             src={watermelon}
             alt="Palestine"
-            className="h-52 object-contain"
+            className="h-52 w-fit object-cover"
           />
         </div>
       </footer>
-    </>
+   
   );
 };
 

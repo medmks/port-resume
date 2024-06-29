@@ -28,9 +28,9 @@ export default function Index() {
         <Experience />
         <Skills />
         <Work />
-        <div className=" sm:pb-36 pb-16 ">
-          <Footer />
-        </div>
+        {/* <div className=" sm:pb-36 pb-16 "> */}
+        <Footer />
+        {/* </div> */}
       </div>
     </main>
   );

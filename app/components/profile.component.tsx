@@ -39,9 +39,10 @@ const Profile = () => {
 
             <div className=" ">
               <p
-                className={`${styles.sectionSubText} w-fit min-w-64 whitespace-normal`}
+                className={`${styles.sectionSubText} w-fit  whitespace-normal`}
               >
-                I am a Full Stack Web Developer. I have 2 years of experience
+                I am a Full Stack Web Developer
+                 with 2 years of experience
                 working on back and front end.
               </p>
             </div>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "~/Hoc";
-import { fadeIn, textVariant } from "~/utilities/motion";
+// import { fadeIn, textVariant } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
 import { bbktour, randonne, multiservice } from "~/assets";
 import Divider from "./Divider.component";
@@ -28,7 +28,7 @@ const ProjectCard = ({
         <img
           src={project.image}
           alt={"project_image"}
-          className="  object-cover rounded-lg h-[250px] max-[335px] "
+          className="  object-contain rounded-lg h-[250px] max-[340px] "
         />
       </motion.div>
     </div>
