@@ -1,27 +1,25 @@
-import { motion } from "framer-motion";
 import { SectionWrapper } from "~/Hoc";
-import { textVariant, fadeIn } from "~/utilities/motion";
-
 import { styles } from "~/utilities/style";
 import Divider from "./Divider.component";
 
 const Aboutme = () => {
   return (
     <>
-      <motion.div variants={fadeIn("right", "spring", 0.5 * 1.1, 0.75)}>
+      <div className=" relative">
         {/* <p className={`${styles.sectionSubText}`}>Introduction</p> */}
         <h2 className={`${styles.sectionHeadText}`}>About me</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
-        variants={textVariant(1.4)}
-        className={`${styles.sectionSubText} mt-7`}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat
-        aliquid laudantium, culpa eaque aspernatur laboriosam doloribus nisi
-        numquam officia molestiae provident illo recusandae aut incidunt nam
-        iste. Unde, delectus?
-      </motion.p>
+      <p className={`${styles.sectionSubText} mt-7`}>
+        Moroccan young programmer who loves to build things, Committed to
+        creating innovative applications and systems that address challenges and
+        contribute to the success of businesses. I have 2 years of experience in
+        web development, using the MERN stack. also I aquired a experience of
+        developing shopify apps with Remix.js and Liquid.
+        <br />
+        <br />I curious about functional programing and I&apos;m willing to
+        learn Elixir and Phoenix Inchallah.
+      </p>
 
       <Divider />
     </>

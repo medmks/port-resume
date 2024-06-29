@@ -12,7 +12,7 @@ const Link = ({
   return (
     <motion.div
       className="flex items-center z-20  gap-1"
-      variants={fadeIn("left", "", 1, index * 0.3)}
+      variants={fadeIn("left", "", 0.5, index * 0.1)}
     >
       <a href={link.link} className={`${styles.sublink}`}>
         {" "}
@@ -24,7 +24,7 @@ const Link = ({
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="#adc3df"
-        className="h-3 w-3"
+        className="h-3 w-3 hidden md:block"
       >
         <path
           strokeLinecap="round"

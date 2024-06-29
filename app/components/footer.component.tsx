@@ -5,14 +5,13 @@ import { styles } from "~/utilities/style";
 import Link from "./link.component";
 import { watermelon } from "~/assets";
 import ModalComponent from "./Modal.component";
-import { Textarea } from "flowbite-react";
 
 const Footer = () => {
   return (
     <>
-      <section className=" flex justify-center flex-col items-center text-center gap-4">
+      <footer className=" flex justify-center flex-col items-center text-center gap-4">
         <motion.div
-          variants={fadeIn("top", "", 0.5, 1)}
+          // variants={fadeIn("top", "", 0.5, 1)}
           className={`${styles.sectionSubText}  `}
         >
           <h1 className={`${styles.heroHeadText} `}>
@@ -20,7 +19,7 @@ const Footer = () => {
           </h1>
         </motion.div>
         <motion.p
-          variants={fadeIn("button", "", 0.7, 1)}
+          // variants={fadeIn("button", "", 0.7, 1)}
           className={`${styles.sectionSubText} `}
         >
           Thank you for checking out my portfolio website. If you have any
@@ -28,10 +27,10 @@ const Footer = () => {
           feel free to reach out to me at
         </motion.p>
         <div className=" relative">
-                  <ModalComponent />
+          <ModalComponent />
         </div>
 
-        <div className="flex relative flex-wrap lg:flex-row justify-center gap-28 mt-5 mb-5  ">
+        <div className="flex relative flex-row lg:flex-row justify-center gap-7 mt-5 mb-5 md:gap-28  ">
           {[
             { name: "LinkedIn", link: "https://linkedin.com/in/pillow" },
             { name: "GitHub", link: "https://github.com/pillow" },
@@ -47,9 +46,8 @@ const Footer = () => {
             alt="Palestine"
             className="h-52 object-contain"
           />
-
         </div>
-      </section>
+      </footer>
     </>
   );
 };

@@ -14,7 +14,7 @@ const ExperienceCard = ({
   return (
     <div className=" w-full flex md:flex-row  justify-start items-center gap-2 mt-7 ">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        // variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className=" p-1"
       >
         <div className="rounded-full flex justify-center min-w-fit ">
@@ -27,11 +27,17 @@ const ExperienceCard = ({
       </motion.div>
 
       <div className="flex flex-col w-full md:w-fit gap-1 text-left ">
-        <motion.div variants={textVariant(index)} className="">
+        <motion.div
+          // variants={textVariant(index)}
+          className=""
+        >
           <h1 className={`${styles.roletext}`}>{exprience.company_name} </h1>
         </motion.div>
 
-        <motion.div variants={textVariant(index)} className=" ">
+        <motion.div
+          //  variants={textVariant(index)}
+          className=" "
+        >
           <p className={`${styles.dateText}  min-w-64 whitespace-normal      `}>
             {exprience.role} - {exprience.date}
           </p>
@@ -59,7 +65,7 @@ const Experience = () => {
   return (
     <>
       <motion.section
-        variants={staggerContainer()}
+        // variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

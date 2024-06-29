@@ -8,22 +8,28 @@ const Skill = () => {
   return (
     <>
       <motion.section
-        variants={staggerContainer()}
+        // variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`z-max-w-7xl mx-auto relative z-0 `}
+        // className={`z-max-w-7xl mx-auto relative z-0 `}
       >
         <div className="relative w-full  mx-auto  ">
           <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
           {/* Todo: add skills */}
-          <div className="flex flex-wrap gap-4 mt-5 min-w-fit ">
+          <div className=" w-full relative">
+                      <div className="max-w-[530px] flex  flex-wrap gap-3 mt-5 min-w-fit relative align-middle overflow-visible  h-fit items-start place-content-start aspect-auto self-auto inset-auto">
             {skills.map((skill, i) => (
-              <div className="  border border-gray-500  p-3 w-fit" key={i}>
-                <p className={`${styles.sectionSubText}`}>{skill.title}</p>
+              <div
+                className="  border border-gray-500 rounded-md p-3 w-fit"
+                key={i}
+              >
+                <p className={`${styles.sectionskillsText}`}>{skill.title}</p>
               </div>
             ))}
           </div>
+          </div>
+
         </div>
       </motion.section>
       <Divider />

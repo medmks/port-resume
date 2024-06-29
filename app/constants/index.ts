@@ -15,7 +15,7 @@ export const navLinks = [
 
 const skills = [
   {
-    title: "Web Developing",
+    title: "TypeScript",
     //   icon: web,
   },
   {
@@ -23,11 +23,25 @@ const skills = [
     //   icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "NodeJS",
+    //   icon: backend,
+  },
+  {
+    title: "Remix.js",
+    //   icon: backend,
+  },  {
+    title: "Prisma",
+    //   icon: web,
+  },
+  {
+    title: "Supabase",
     //   icon: backend,
   },
   {
     title: "Problem Solver",
+  },
+  {
+    title: "Figma",
   },
   {
     title: "Communicator",
@@ -37,6 +51,11 @@ const skills = [
   },
   {
     title: "Perfectionist",
+  },
+
+  {
+    title: "Tailwindcss",
+    //   icon: mobile,
   },
 ];
 

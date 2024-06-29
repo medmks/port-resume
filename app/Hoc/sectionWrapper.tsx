@@ -15,8 +15,26 @@ const SectionWrapper = ({ Component, id }: TSectionWrapperProps) =>
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         variants={{
-          hidden: { opacity: 0, x: -100 },
-          show: { opacity: 1, x: 0 },
+          hidden: {
+            opacity: 0,
+            y: -50,
+            transition: {
+              duration: 0.5,
+              type: "spring",
+              damping: 15,
+              stiffness: 100,
+            },
+          },
+          show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.5,
+              type: "spring",
+              damping: 15,
+              stiffness: 100,
+            },
+          },
         }}
       >
         <Component />
