@@ -1,3 +1,7 @@
 import jobit from "./jobit.png";
 import watermelon from "./watermelon-palestine.gif";
-export { jobit, watermelon };
+import randonne from "./randonne.png";
+import bbktour from "./bbktour.png";
+import multiservice from "./multiservice.png";
+
+export { jobit, watermelon, bbktour, randonne, multiservice };
