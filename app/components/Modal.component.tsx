@@ -30,7 +30,7 @@ function ModalComponent() {
         onClick={() => setOpenModal(true)}
         variants={staggerContainer(0, 5)}
         className={
-          "  bg-gradient-to-r bg-blue-600 mt-2 hover:bg-opacity-75  text-white px-16 p-3 rounded-md w-fit font-outfit font-medium md:text-[28px] sm:text-[22px] xs:text-[22px] text-[22px] "
+          "  bg-gradient-to-r bg-blue-600 mt-2 hover:bg-opacity-75  text-white px-14 p-3 rounded-md w-fit font-outfit font-medium md:text-[28px] sm:text-[22px] xs:text-[22px] text-[22px] "
         }
       >
         Say salam

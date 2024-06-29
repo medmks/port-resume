@@ -11,7 +11,7 @@ const Profile = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`z-max-w-7xl mx-auto relative z-0 `}
+
     >
       <div className="relative w-full  mx-auto  ">
         <div className=" w-full flex md:flex-row flex-col justify-start gap-5 ">

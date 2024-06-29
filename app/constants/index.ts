@@ -19,7 +19,15 @@ const skills = [
     //   icon: web,
   },
   {
+    title: "NodeJS",
+    //   icon: backend,
+  },
+  {
     title: "Ionic Developer",
+    //   icon: mobile,
+  },
+  {
+    title: "Tailwindcss",
     //   icon: mobile,
   },
   {
@@ -53,10 +61,7 @@ const skills = [
     title: "Perfectionist",
   },
 
-  {
-    title: "Tailwindcss",
-    //   icon: mobile,
-  },
+
 ];
 
 const experiences = [
