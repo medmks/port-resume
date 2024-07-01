@@ -19,7 +19,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className="bg-customColor relative z-0  h-full">
+    <main className=" relative z-0  h-full">
       <div className="relative z-0">
         <div className=" sm:pt-36 pt-16 ">
           <Profile />
@@ -28,9 +28,7 @@ export default function Index() {
         <Experience />
         <Skills />
         <Work />
-        {/* <div className=" sm:pb-36 pb-16 "> */}
         <Footer />
-        {/* </div> */}
       </div>
     </main>
   );

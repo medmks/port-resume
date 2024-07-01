@@ -1,3 +1,4 @@
+import { bbktour, randonne, multiservice } from "~/assets";
 export const navLinks = [
   {
     id: "about",
@@ -11,6 +12,13 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+];
+
+const worksexample = [
+  //  {image: jobit, source_code_link: "https://github.com" },
+  { image: bbktour, source_code_link: "https://github.com" ,name:"bbktour",tags:[{it:"WordPress"}]},
+  { image: randonne, source_code_link: "https://github.com" ,name:"randonne Maroc",tags:[{it:"WordPress"}]}, 
+  { image: multiservice, source_code_link: "https://github.com" , name:"Multiservice pro",tags:[{it:"WordPress"}]},
 ];
 
 const skills = [
@@ -58,7 +66,7 @@ const skills = [
     title: "Explorer",
   },
   {
-    title: "Perfectionist",
+    title: "Wordpress",
   },
 
 
@@ -152,4 +160,4 @@ const contact_links =[
 ]
 
 
-export { skills, experiences, projects ,contact_links};
+export { skills, experiences, projects ,contact_links,worksexample};

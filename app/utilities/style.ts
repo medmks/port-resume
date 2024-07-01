@@ -8,7 +8,7 @@ const styles = {
   heroSubText:
     "text-red-300 font-outfit font-semibold lg:text-[32px] sm:text-[26px]  xs:text-[20px] text-[24px] lg:leading-[42px] ",
   sublink:
-    "text-red-300 font-outfit font-medium lg:text-[24px] sm:text-[18px]  xs:text-[20px] text-[20px] lg:leading-[25px] ",
+    "text-red-100 font-outfit font-medium lg:text-[24px] sm:text-[18px]  xs:text-[20px] text-[20px] lg:leading-[25px] ",
   sectionHeadText:
     "font-outfit text-white font-semibold  md:text-[30px] sm:text-[30px] xs:text-[40px] text-[28px]",
   roletext:

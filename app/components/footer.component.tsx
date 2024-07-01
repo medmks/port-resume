@@ -8,24 +8,24 @@ import ModalComponent from "./Modal.component";
 const Footer = () => {
   return (
 
-      <footer className=" flex justify-center flex-col items-center text-center gap-4 w-full ">
-        <div
-          // variants={fadeIn("top", "", 0.5, 1)}
-          className={`${styles.sectionSubText}  `}
-        >
+      <footer className="w-full relative ">
+
+       <div className="flex justify-center flex-col items-center text-center gap-5 ">
+
+      
+        <div className={` flex flex-col gap-4  `}>
           <h1 className={`${styles.heroHeadText} `}>
             Let&apos;s create something together
           </h1>
-        </div>
-        <p
-          // variants={fadeIn("button", "", 0.7, 1)}
-          className={`${styles.sectionSubText} `}
-        >
+       
+        
+        <p className={`${styles.sectionSubText} `}>
           Thank you for checking out my portfolio website. If you have any
           questions or would like to discuss a potential collaboration, please
           feel free to reach out to me at
         </p>
-        <div className=" relative">
+        </div>
+        <div className="relative">
           <ModalComponent />
         </div>
 
@@ -41,7 +41,9 @@ const Footer = () => {
             alt="Palestine"
             className="h-52 w-fit object-cover"
           />
-        </div>
+        </div> 
+       </div>
+
       </footer>
    
   );

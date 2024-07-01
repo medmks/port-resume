@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { staggerContainer } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
 import { skills } from "~/constants";
 import { SectionWrapper } from "~/Hoc";
