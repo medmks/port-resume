@@ -7,23 +7,18 @@ import ModalComponent from "./Modal.component";
 
 const Footer = () => {
   return (
-
-      <footer className="w-full relative ">
-
-       <div className="flex justify-center flex-col items-center text-center gap-5 ">
-
-      
+    <footer className="w-full relative ">
+      <div className="flex justify-center flex-col items-center text-center gap-5 ">
         <div className={` flex flex-col gap-4  `}>
           <h1 className={`${styles.heroHeadText} `}>
             Let&apos;s create something together
           </h1>
-       
-        
-        <p className={`${styles.sectionSubText} `}>
-          Thank you for checking out my portfolio website. If you have any
-          questions or would like to discuss a potential collaboration, please
-          feel free to reach out to me at
-        </p>
+
+          <p className={`${styles.sectionSubText} `}>
+            Thank you for checking out my portfolio website. If you have any
+            questions or would like to discuss a potential collaboration, please
+            feel free to reach out to me at
+          </p>
         </div>
         <div className="relative">
           <ModalComponent />
@@ -41,11 +36,9 @@ const Footer = () => {
             alt="Palestine"
             className="h-52 w-fit object-cover"
           />
-        </div> 
-       </div>
-
-      </footer>
-   
+        </div>
+      </div>
+    </footer>
   );
 };
 

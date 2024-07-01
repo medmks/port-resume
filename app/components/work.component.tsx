@@ -5,54 +5,66 @@ import { styles } from "~/utilities/style";
 import Divider from "./Divider.component";
 import { worksexample } from "~/constants";
 
-const ProjectCard=({project,index}:{project:{image:string,source_code_link:string,tags:{it:string}[],name:string},index:number})=>{
-  return<>
-    <motion.div 
-    variants={fadeIn("up","spring",0.5 * index,0.75)}
-
-    >
-      <div 
-        // options={{
-        //   max: 45,
-        //   scale: 1,
-        //   speed: 450,
-        //   }}     
-        className=" bg-zinc-900 p-3 h-full  w-full xs:[350px] rounded-2xl  shadow-md">
-            <div className="relative w-full">
-              <img src={project.image} alt={project.image} className="w-[330px] h-[250px]  object-contain rounded-2xl "/>
-             { project.tags[0].it !== "WordPress"  &&(
-                            <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
-                           <div className="  black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer " >
-                              
-                              {/*  <img src={"github"} alt="" className="w-1/2 h-1/2 object-contain" />*/}
-            
-                            </div> 
-                          </div>
-                       
-             ) }
+const ProjectCard = ({
+  project,
+  index,
+}: {
+  project: {
+    image: string;
+    source_code_link: string;
+    tags: { it: string }[];
+    name: string;
+  };
+  index: number;
+}) => {
+  return (
+    <>
+      <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
+        <div
+          // options={{
+          //   max: 45,
+          //   scale: 1,
+          //   speed: 450,
+          //   }}
+          className=" bg-zinc-900 p-3 h-full  w-full xs:[350px] rounded-2xl  shadow-md"
+        >
+          <div className="relative w-full">
+            <img
+              src={project.image}
+              alt={project.image}
+              className="w-[330px] h-[250px]  object-contain rounded-2xl "
+            />
+            {project.tags[0].it !== "WordPress" && (
+              <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
+                <div className="  black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer ">
+                  {/*  <img src={"github"} alt="" className="w-1/2 h-1/2 object-contain" />*/}
+                </div>
               </div>
-            <div className="mt-2 flex flex-col p-2">
-              <h3 className={styles.roletext}>{project.name}</h3>
-              {/* <p className=" leading-[25px] text-secondary text-[14px]" >{project.description}</p> */}
-            </div>
-            <div className="mt-2 flex flex-wrap gap-2 text-red-300 p-2  "> 
-              {
-                project.tags.map((tag)=>{
-                  return(
-                    <div key={tag.it} className="border border-gray-500 rounded-md p-2 w-fit">
-                            <p  className={`font-[14px] font-outfit text-white `}>{tag.it}</p>
-
-                    </div>
-                  )
-                })
-              }
-            </div>
-      </div>
-
-    </motion.div>
-
-  </>
-}
+            )}
+          </div>
+          <div className="mt-2 flex flex-col p-2">
+            <h3 className={styles.roletext}>{project.name}</h3>
+            {/* <p className=" leading-[25px] text-secondary text-[14px]" >{project.description}</p> */}
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2 text-red-300 p-2  ">
+            {project.tags.map((tag) => {
+              return (
+                <div
+                  key={tag.it}
+                  className="border border-gray-500 rounded-md p-2 w-fit"
+                >
+                  <p className={`font-[14px] font-outfit text-white `}>
+                    {tag.it}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </motion.div>
+    </>
+  );
+};
 // const ProjectCard = ({
 //   project,
 //   index,

@@ -16,9 +16,24 @@ export const navLinks = [
 
 const worksexample = [
   //  {image: jobit, source_code_link: "https://github.com" },
-  { image: bbktour, source_code_link: "https://github.com" ,name:"bbktour",tags:[{it:"WordPress"}]},
-  { image: randonne, source_code_link: "https://github.com" ,name:"randonne Maroc",tags:[{it:"WordPress"}]}, 
-  { image: multiservice, source_code_link: "https://github.com" , name:"Multiservice pro",tags:[{it:"WordPress"}]},
+  {
+    image: bbktour,
+    source_code_link: "https://github.com",
+    name: "bbktour",
+    tags: [{ it: "WordPress" }],
+  },
+  {
+    image: randonne,
+    source_code_link: "https://github.com",
+    name: "randonne Maroc",
+    tags: [{ it: "WordPress" }],
+  },
+  {
+    image: multiservice,
+    source_code_link: "https://github.com",
+    name: "Multiservice pro",
+    tags: [{ it: "WordPress" }],
+  },
 ];
 
 const skills = [
@@ -45,7 +60,8 @@ const skills = [
   {
     title: "Remix.js",
     //   icon: backend,
-  },  {
+  },
+  {
     title: "Prisma",
     //   icon: web,
   },
@@ -68,8 +84,6 @@ const skills = [
   {
     title: "Wordpress",
   },
-
-
 ];
 
 const experiences = [
@@ -153,11 +167,10 @@ const projects = [
   },
 ];
 
-const contact_links =[
+const contact_links = [
   { name: "LinkedIn", link: "www.linkedin.com/in/mohamed-guernaoui-ab27a2229" },
   { name: "GitHub", link: "https://github.com/medmks" },
   { name: "Email", link: "mguernaoui03@gmail.com" },
-]
+];
 
-
-export { skills, experiences, projects ,contact_links,worksexample};
+export { skills, experiences, projects, contact_links, worksexample };

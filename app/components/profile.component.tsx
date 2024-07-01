@@ -11,7 +11,7 @@ const Profile = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-    className=" w-full  mx-auto  "
+      className=" w-full  mx-auto  "
     >
       <div className="relative w-full  mx-auto  ">
         <div className=" w-full flex md:flex-row flex-col justify-start gap-5 ">
@@ -41,8 +41,7 @@ const Profile = () => {
               <p
                 className={`${styles.sectionSubText} w-fit  whitespace-normal`}
               >
-                I am a Full Stack Web Developer
-                 with 2 years of experience
+                I am a Full Stack Web Developer with 2 years of experience
                 working on back and front end.
               </p>
             </div>

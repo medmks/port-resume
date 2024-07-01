@@ -4,30 +4,26 @@ import Divider from "./Divider.component";
 
 const Aboutme = () => {
   return (
-
     <section className=" relative w-full">
-      
+      <div className="">
+        <h2 className={`${styles.sectionHeadText}`}>About me</h2>
+      </div>
 
-        <div className="">
-          <h2 className={`${styles.sectionHeadText}`}>About me</h2>
-        </div>
+      <div>
+        <p className={`${styles.sectionSubText} mt-7`}>
+          Moroccan young programmer who loves to build things, Committed to
+          creating innovative applications and systems that address challenges
+          and contribute to the success of businesses. I have 2 years of
+          experience in web development, using the MERN stack. also I aquired a
+          experience of developing shopify apps with Remix.js and Liquid.
+          <br />
+          <br />I curious about functional programing and I&apos;m willing to
+          learn Elixir and Phoenix Inchallah.
+        </p>
+      </div>
 
-        <div>
-              <p className={`${styles.sectionSubText} mt-7`}>
-                Moroccan young programmer who loves to build things, Committed to
-                creating innovative applications and systems that address challenges and
-                contribute to the success of businesses. I have 2 years of experience in
-                web development, using the MERN stack. also I aquired a experience of
-                developing shopify apps with Remix.js and Liquid.
-                <br />
-                <br />I curious about functional programing and I&apos;m willing to
-                learn Elixir and Phoenix Inchallah.
-              </p>
-        </div>
-
-
-        <Divider />
-      </section>
+      <Divider />
+    </section>
   );
 };
 
