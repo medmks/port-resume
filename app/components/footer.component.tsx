@@ -2,6 +2,7 @@ import { SectionWrapper } from "~/Hoc";
 import { styles } from "~/utilities/style";
 import Link from "./link.component";
 import { watermelon } from "~/assets";
+import { contact_links } from "~/constants";
 import ModalComponent from "./Modal.component";
 
 const Footer = () => {
@@ -29,11 +30,7 @@ const Footer = () => {
         </div>
 
         <div className="flex relative flex-row lg:flex-row justify-center gap-7 mt-5 mb-5 md:gap-28  ">
-          {[
-            { name: "LinkedIn", link: "https://linkedin.com/in/pillow" },
-            { name: "GitHub", link: "https://github.com/pillow" },
-            { name: "Email", link: "mailto:pillow@posteo.net" },
-          ].map((link, i) => (
+          {contact_links.map((link, i) => (
             <Link key={i} link={link} index={i + 1} />
           ))}
         </div>
