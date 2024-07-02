@@ -23,7 +23,7 @@ const Link = ({
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        stroke="#adc3df"
+        stroke="#fde8e8"
         className="h-3 w-3 hidden md:block"
       >
         <path

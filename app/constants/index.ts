@@ -169,8 +169,8 @@ const projects = [
 
 const contact_links = [
   { name: "LinkedIn", link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229" },
-  { name: "GitHub", link: "github.com/medmks" },
-  { name: "Email", link: "mguernaoui03@gmail.com" },
+  { name: "GitHub", link: "https://github.com/medmks" },
+  { name: "Email", link: "mailto:mguernaoui03@gmail.com" },
 ];
 
 export { skills, experiences, projects, contact_links, worksexample };

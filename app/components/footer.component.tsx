@@ -5,10 +5,12 @@ import { watermelon } from "~/assets";
 import { contact_links } from "~/constants";
 import ModalComponent from "./Modal.component";
 
+
+
 const Footer = () => {
   return (
     <footer className="w-full relative ">
-      <div className="flex justify-center flex-col items-center text-center gap-5 ">
+      <div className="flex justify-center flex-col items-center text-center gap-10 ">
         <div className={` flex flex-col gap-4  `}>
           <h1 className={`${styles.heroHeadText} `}>
             Let&apos;s create something together
@@ -20,11 +22,11 @@ const Footer = () => {
             feel free to reach out to me at
           </p>
         </div>
-        <div className="relative">
+        <div className="relative ">
           <ModalComponent />
         </div>
 
-        <div className="flex relative flex-row lg:flex-row justify-center gap-7 mt-5 mb-5 md:gap-28  ">
+        <div className="flex relative flex-row lg:flex-row justify-center gap-7 mt-7 mb-5 md:gap-28  ">
           {contact_links.map((link, i) => (
             <Link key={i} link={link} index={i + 1} />
           ))}
@@ -38,6 +40,7 @@ const Footer = () => {
           />
         </div>
       </div>
+
     </footer>
   );
 };
