@@ -168,8 +168,8 @@ const projects = [
 ];
 
 const contact_links = [
-  { name: "LinkedIn", link: "www.linkedin.com/in/mohamed-guernaoui-ab27a2229" },
-  { name: "GitHub", link: "https://github.com/medmks" },
+  { name: "LinkedIn", link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229" },
+  { name: "GitHub", link: "github.com/medmks" },
   { name: "Email", link: "mguernaoui03@gmail.com" },
 ];
 

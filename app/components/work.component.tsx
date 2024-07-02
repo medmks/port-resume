@@ -21,18 +21,13 @@ const ProjectCard = ({
     <>
       <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
         <div
-          // options={{
-          //   max: 45,
-          //   scale: 1,
-          //   speed: 450,
-          //   }}
-          className=" bg-zinc-900 p-3 h-full  w-full xs:[350px] rounded-2xl  shadow-md"
+          className=" bg-zinc-900 p-3 h-full  w-full xs:[350px] rounded-xl  shadow-md"
         >
-          <div className="relative w-full">
+          <div className="relative w-full ">
             <img
               src={project.image}
               alt={project.image}
-              className="w-[330px] h-[250px]  object-contain rounded-2xl "
+              className="w-[330px] h-[250px]  object-contain  rounded-md "
             />
             {project.tags[0].it !== "WordPress" && (
               <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
