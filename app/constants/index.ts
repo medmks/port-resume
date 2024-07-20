@@ -21,18 +21,21 @@ const worksexample = [
     source_code_link: "https://github.com",
     name: "bbktour",
     tags: [{ it: "WordPress" }],
+    url:"https://bbktours.com"
   },
   {
     image: randonne,
     source_code_link: "https://github.com",
     name: "randonne Maroc",
     tags: [{ it: "WordPress" }],
+    url:"https://xn--randonne-maroc-hkb.com"
   },
   {
     image: multiservice,
     source_code_link: "https://github.com",
     name: "Multiservice pro",
     tags: [{ it: "WordPress" }],
+    url:"https://multiservicepro.ma"
   },
 ];
 

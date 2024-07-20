@@ -14,6 +14,7 @@ const ProjectCard = ({
     source_code_link: string;
     tags: { it: string }[];
     name: string;
+    url:string
   };
   index: number;
 }) => {
@@ -38,7 +39,7 @@ const ProjectCard = ({
             )}
           </div>
           <div className="mt-2 flex flex-col p-2">
-            <h3 className={styles.roletext}>{project.name}</h3>
+            <a href={project.url} target="_blank"  rel="noreferrer" className={styles.roletext}>{project.name}</a>
             {/* <p className=" leading-[25px] text-secondary text-[14px]" >{project.description}</p> */}
           </div>
           <div className="mt-2 flex flex-wrap gap-2 text-red-300 p-2  ">
@@ -60,29 +61,7 @@ const ProjectCard = ({
     </>
   );
 };
-// const ProjectCard = ({
-//   project,
-//   index,
-// }: {
-//   project: { image: string; source_code_link: string };
-//   index: number;
-// }) => {
-//   return (
-//     <div className="h-[250px] min-w-[300px] max-w-[350px]  ">
-//       <motion.div
-//         // variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-//         key={index}
-//         className=" relative "
-//       >
-//         <img
-//           src={project.image}
-//           alt={"project_image"}
-//           className="  object-contain rounded-lg h-[250px] max-[340px] "
-//         />
-//       </motion.div>
-//     </div>
-//   );
-// };
+
 const Work = () => {
   return (
     <>
@@ -90,7 +69,11 @@ const Work = () => {
         <motion.div
         // variants={textVariant(0.5)}
         >
-          <h2 className={`${styles.sectionHeadText}`}>Work</h2>
+          <div className="flex justify-between items-center">
+            <h2 className={`${styles.sectionHeadText} text-right`}>Work</h2>
+            <a href="/" target="_blank"  className={`${styles.sectionskillsText}  underline flex justify-end items-end text-left `} >See more</a>
+          </div>
+          
           <div className=" flex flex-col justify-center items-center mt-7 min-[900px]:grid grid-cols-2 min-[1200px]:grid-cols-3  gap-4  ">
             {worksexample.map((work, index) => {
               return <ProjectCard key={index} project={work} index={index} />;

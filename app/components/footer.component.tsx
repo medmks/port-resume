@@ -1,9 +1,9 @@
 import { SectionWrapper } from "~/Hoc";
 import { styles } from "~/utilities/style";
-import Link from "./link.component";
 import { watermelon } from "~/assets";
 import { contact_links } from "~/constants";
 import ModalComponent from "./Modal.component";
+import Link from "./link.component";
 
 
 
