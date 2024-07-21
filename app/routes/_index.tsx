@@ -12,7 +12,7 @@ import {
 Navbar;
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Welcome to my portfolio" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
