@@ -5,8 +5,6 @@ import { contact_links } from "~/constants";
 import ModalComponent from "./Modal.component";
 import Link from "./link.component";
 
-
-
 const Footer = () => {
   return (
     <footer className="w-full relative ">
@@ -40,7 +38,6 @@ const Footer = () => {
           />
         </div>
       </div>
-
     </footer>
   );
 };
