@@ -7,12 +7,14 @@ import Link from "./link.component";
 import Button from "./button.component";
 import Work from "./work.component";
 import Modal from "./Modal.component";
+import BentoBox from "./bento.box.component";
 export {
   Profile,
   Aboutme,
   Experience,
   Skills,
   Footer,
+  BentoBox,
   Button,
   Link,
   Work,
