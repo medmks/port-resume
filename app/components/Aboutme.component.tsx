@@ -17,8 +17,8 @@ const Aboutme = () => {
           experience in web development, using the MERN stack. also I aquired a
           experience of developing shopify apps with Remix.js and Liquid.
           <br />
-          <br />I&apos;m curious about functional programing and I&apos;m willing to
-          learn Elixir and Phoenix Inchallah.
+          {/* <br />I&apos;m curious about functional programing and I&apos;m willing to
+          learn Elixir and Phoenix Inchallah. */}
         </p>
       </div>
 
