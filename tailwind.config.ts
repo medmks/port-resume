@@ -5,6 +5,20 @@ export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}", flowbite.content()],
   theme: {
     extend: {
+      animation: {
+        "move-diagonal": "move-diagonal 0.5s ease-out forwards", // adjust duration as needed
+        return: "return 0.5s ease-out forwards", // animation for returning
+      },
+      keyframes: {
+        "move-diagonal": {
+          "0%": { transform: "translate(0, 0)" },
+          "100%": { transform: "translate(10px, -10px)" },
+        },
+        return: {
+          "0%": { transform: "translate(10px, -10px)" },
+          "100%": { transform: "translate(0, 0)" }, // Return to original position
+        },
+      },
       colors: {
         customColor: "#0e1010",
       },
