@@ -3,7 +3,6 @@ import AnimationWrapper from "~/common/AnimationPresence";
 import { worksexample } from "~/constants";
 import { ProjectCard } from "./work.component";
 
-
 type Troutes = {
   routes: {
     name: string;
@@ -11,10 +10,12 @@ type Troutes = {
     IsJsx?: boolean;
   }[];
   defaultIndex?: number;
+  initPart?: string;
   defaulthidden?: string[];
-//   children: React.ReactNode;
-//   active: string;
-//   SetFiltredWork: (value: string) => void;
+  //   children: React.ReactNode;
+  //
+  //   active: string;
+  //   SetFiltredWork: (value: string) => void;
 };
 export let ActiveTab: React.RefObject<HTMLButtonElement>;
 export let Activelineref: React.RefObject<HTMLHRElement>;
@@ -23,13 +24,13 @@ const UserNavBar = ({
   routes,
   defaultIndex = 0,
   defaulthidden,
-//   children,
-//   active,
-//   SetFiltredWork,
+  initPart = "Featured",
+  //   children,
+  //   active,
+  //   SetFiltredWork,
 }: Troutes) => {
   const [indexroute, setindexroute] = useState(defaultIndex);
   const [active, setActive] = useState("Featured");
-
 
   console.log(defaultIndex);
   const [filteredWork, setfilteredWork] = useState(worksexample);
@@ -43,19 +44,20 @@ const UserNavBar = ({
       Activelineref.current.style.left = btn.offsetLeft + "px";
     }
     setindexroute(index);
-
+    console.log(index);
     setActive(routes[index].name);
 
-    const filtered = worksexample.filter((work) => work.type === routes[index].name);
+    const filtered = worksexample.filter(
+      (work) => work.type === routes[index].name,
+    );
     setfilteredWork(filtered);
-
   };
 
   useEffect(() => {
     if (ActiveTab.current && Activelineref.current) {
       Changepagestate(ActiveTab.current, defaultIndex);
     }
-  }, [defaultIndex]);
+  }, [initPart]);
 
   return (
     <>
@@ -89,7 +91,7 @@ const UserNavBar = ({
               ) : (
                 <img
                   src={route.icon}
-                  className={`w-6 h-6 p-0   aspect-auto  ${indexroute !== i  && ' opacity-50'} `}
+                  className={`w-6 h-6 p-0   aspect-auto  ${indexroute !== i && " opacity-50"} `}
                   alt={route.name}
                 />
               )}
@@ -101,22 +103,22 @@ const UserNavBar = ({
       </div>
       {/* {Array.isArray(children) ? children[indexroute] : children} */}
       <div className="flex flex-col justify-center items-center mt-7 min-[900px]:grid grid-cols-2 min-[1200px]:grid-cols-2 gap-4">
-                {filteredWork.length > 0 ? (
-                  filteredWork.map((work, index) => (
-                    <AnimationWrapper
-                      key={index}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 1, delay: index * 0.1 }}
-                    >
-                      <ProjectCard project={work} index={index} />
-                    </AnimationWrapper>
-                  ))
-                ) : (
-                  <p className="text-white font-outfit font-normal lg:text-[24px] sm:text-[18px] xs:text-[20px] text-[20px] lg:leading-[25px]">
-                    No project found
-                  </p>
-                )}
-       </div>
+        {filteredWork.length > 0 ? (
+          filteredWork.map((work, index) => (
+            <AnimationWrapper
+              key={index}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+            >
+              <ProjectCard project={work} index={index} />
+            </AnimationWrapper>
+          ))
+        ) : (
+          <p className="text-white text-start font-outfit font-normal lg:text-[24px] sm:text-[18px] xs:text-[20px] text-[20px] lg:leading-[25px]">
+            No project found
+          </p>
+        )}
+      </div>
     </>
   );
 };
