@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "~/utilities/motion";
 import { styles } from "~/utilities/style";
+import { useState } from "react";
 
 const Link = ({
   link,
@@ -9,12 +10,18 @@ const Link = ({
   link: { name: string; link: string };
   index: number;
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <motion.div
       className="flex items-center z-20  gap-1"
       variants={fadeIn("left", "", 0.5, index * 0.1)}
     >
-      <a href={link.link} className={`${styles.sublink}`}>
+      <a
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        href={link.link}
+        className={`${styles.sublink}`}
+      >
         {" "}
         {link.name}{" "}
       </a>
@@ -24,7 +31,9 @@ const Link = ({
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="#fde8e8"
-        className="h-3 w-3 hidden md:block"
+        className={`w-3 h-3 hidden md:block ${
+          isHovered ? "animate-move-diagonal" : "animate-return"
+        }`}
       >
         <path
           strokeLinecap="round"
