@@ -17,7 +17,7 @@ const Skill = () => {
           <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
           {/* Todo: add skills */}
           <div className=" w-full relative">
-            <div className="max-w-fit flex flex-wrap gap-3 mt-5 min-w-fit relative align-middle overflow-visible  h-fit items-start place-content-start aspect-auto self-auto inset-auto">
+            <div className="max-w-fit flex flex-wrap gap-3 mt-5 min-w-fit relative align-middle overflow-visible  h-fit items-center place-content-center aspect-auto self-auto inset-auto">
               {skills.map((skill, i) => (
                 <div
                   className="  border border-gray-500 rounded-md p-3 w-fit"
