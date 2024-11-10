@@ -7,12 +7,13 @@ import {
   Skills,
   Footer,
   Work,
+  BentoBox,
 } from "~/components";
 
 Navbar;
 export const meta: MetaFunction = () => {
   return [
-    { title: "Welcome to my portfolio" },
+    { title: " Developer Portfolio" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -25,6 +26,7 @@ export default function Index() {
           <Profile />
         </div>
         <Aboutme />
+        {/* <BentoBox /> */}
         <Experience />
         <Skills />
         <Work />
