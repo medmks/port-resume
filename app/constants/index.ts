@@ -1,4 +1,11 @@
-import { bbktour, randonne, multiservice } from "~/assets";
+import {
+  bbktour,
+  randonne,
+  multiservice,
+  WordPressIcon,
+  shopify,
+} from "~/assets";
+
 export const navLinks = [
   {
     id: "about",
@@ -17,25 +24,100 @@ export const navLinks = [
 const worksexample = [
   //  {image: jobit, source_code_link: "https://github.com" },
   {
+    type_id: 2,
     image: bbktour,
     source_code_link: "https://github.com",
     name: "bbktour",
-    tags: [{ it: "WordPress" }],
-    url:"https://bbktours.com"
+    tags: [{ IT: "WordPress" }],
+    url: "https://bbktours.com",
   },
   {
+    type_id: 2,
+    image: bbktour,
+    source_code_link: "https://github.com",
+    name: "bbktour",
+    tags: [{ IT: "WordPress" }],
+    url: "https://bbktours.com",
+  },
+  {
+    type_id: 2,
+    image: bbktour,
+    source_code_link: "https://github.com",
+    name: "bbktour",
+    tags: [{ IT: "WordPress" }],
+    url: "https://bbktours.com",
+  },
+  {
+    type_id: 2,
+    image: bbktour,
+    source_code_link: "https://github.com",
+    name: "bbktour",
+    tags: [{ IT: "WordPress" }],
+    url: "https://bbktours.com",
+  },
+  {
+    type_id: 0,
     image: randonne,
     source_code_link: "https://github.com",
     name: "randonne Maroc",
-    tags: [{ it: "WordPress" }],
-    url:"https://xn--randonne-maroc-hkb.com"
+    tags: [{ IT: "WordPress" }],
+    url: "https://xn--randonne-maroc-hkb.com",
   },
   {
+    type_id: 0,
+    image: randonne,
+    source_code_link: "https://github.com",
+    name: "randonne Maroc",
+    tags: [{ IT: "WordPress" }],
+    url: "https://xn--randonne-maroc-hkb.com",
+  },
+  {
+    type_id: 0,
+    image: randonne,
+    source_code_link: "https://github.com",
+    name: "randonne Maroc",
+    tags: [{ IT: "WordPress" }],
+    url: "https://xn--randonne-maroc-hkb.com",
+  },
+  {
+    type_id: 0,
+    image: randonne,
+    source_code_link: "https://github.com",
+    name: "randonne Maroc",
+    tags: [{ IT: "WordPress" }],
+    url: "https://xn--randonne-maroc-hkb.com",
+  },
+  {
+    type_id: 1,
     image: multiservice,
     source_code_link: "https://github.com",
     name: "Multiservice pro",
-    tags: [{ it: "WordPress" }],
-    url:"https://multiservicepro.ma"
+    tags: [{ IT: "WordPress" }],
+    url: "https://multiservicepro.ma",
+  },
+  {
+    type_id: 1,
+    image: multiservice,
+    source_code_link: "https://github.com",
+    name: "Multiservice pro",
+    tags: [{ IT: "WordPress" }],
+    url: "https://multiservicepro.ma",
+  },
+  {
+    type_id: 1,
+    image: multiservice,
+    source_code_link: "https://github.com",
+    name: "Multiservice pro",
+    tags: [{ IT: "WordPress" }],
+    url: "https://multiservicepro.ma",
+  },
+  {
+    type_id: 1,
+    image: multiservice,
+    source_code_link: "https://github.com",
+    name: "Multiservice pro",
+    tags: [{ IT: "WordPress" }],
+    url: "https://multiservicepro.ma",
   },
 ];
 
@@ -171,9 +253,31 @@ const projects = [
 ];
 
 const contact_links = [
-  { name: "LinkedIn", link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229" },
+  {
+    index: 0,
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229",
+  },
   { name: "GitHub", link: "https://github.com/medmks" },
   { name: "Email", link: "mailto:mguernaoui03@gmail.com" },
 ];
+const WorkTabs = [
+  {
+    index: 0,
+    TypeOfWork: "Featured",
+    icon: "",
+    IsJsx: true,
+  },
+  {
+    index: 1,
+    TypeOfWork: "Wordpress",
+    icon: WordPressIcon,
+  },
+  {
+    index: 2,
+    TypeOfWork: "Shopify Apps",
+    icon: shopify,
+  },
+];
 
-export { skills, experiences, projects, contact_links, worksexample };
+export { skills, experiences, projects, contact_links, worksexample, WorkTabs };
