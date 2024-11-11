@@ -4,6 +4,9 @@ import {
   multiservice,
   WordPressIcon,
   shopify,
+  github,
+  linkedIn,
+  email,
 } from "~/assets";
 
 export const navLinks = [
@@ -254,12 +257,12 @@ const projects = [
 
 const contact_links = [
   {
-    index: 0,
+    icon:linkedIn,
     name: "LinkedIn",
     link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229",
   },
-  { name: "GitHub", link: "https://github.com/medmks" },
-  { name: "Email", link: "mailto:mguernaoui03@gmail.com" },
+  { name: "GitHub", link: "https://github.com/medmks", icon: github },
+  { name: "Email", link: "mailto:mguernaoui03@gmail.com",icon: email },
 ];
 const WorkTabs = [
   {
