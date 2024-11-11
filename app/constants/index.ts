@@ -257,12 +257,12 @@ const projects = [
 
 const contact_links = [
   {
-    icon:linkedIn,
+    icon: linkedIn,
     name: "LinkedIn",
     link: "https://linkedin.com/in/mohamed-guernaoui-ab27a2229",
   },
   { name: "GitHub", link: "https://github.com/medmks", icon: github },
-  { name: "Email", link: "mailto:mguernaoui03@gmail.com",icon: email },
+  { name: "Email", link: "mailto:mguernaoui03@gmail.com", icon: email },
 ];
 const WorkTabs = [
   {

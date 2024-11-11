@@ -6,9 +6,8 @@ import { useState } from "react";
 const Link = ({
   link,
   index,
-
 }: {
-  link: { name: string; link: string, icon: string };
+  link: { name: string; link: string; icon: string };
   index: number;
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -16,7 +15,6 @@ const Link = ({
     <motion.div
       className="flex items-center z-20  gap-1 "
       variants={fadeIn("left", "", 0.5, index * 0.1)}
-
     >
       <a
         onMouseEnter={() => setIsHovered(true)}
@@ -24,7 +22,9 @@ const Link = ({
         href={link.link}
         className={`${styles.sublink} flex flex-row gap-2 items-center`}
       >
-        <div className="relative h-6 w-6 rounded-full flex bg-white  p-1"><img src={link.icon} alt="object-cover h-6 w-6" /></div>
+        <div className="relative h-6 w-6 rounded-full flex bg-white  p-1">
+          <img src={link.icon} alt="object-cover h-6 w-6" />
+        </div>
         {link.name}{" "}
       </a>
       <svg

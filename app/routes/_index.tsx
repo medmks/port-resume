@@ -3,11 +3,11 @@ import Navbar from "~/components/navbar.component";
 import {
   Profile,
   Aboutme,
-  Experience,
+  // Experience,
   Skills,
   Footer,
   Work,
-  BentoBox,
+  // BentoBox,
 } from "~/components";
 
 Navbar;
@@ -27,7 +27,7 @@ export default function Index() {
         </div>
         <Aboutme />
         {/* <BentoBox /> */}
-        <Experience />
+        {/* <Experience /> */}
         <Skills />
         <Work />
         <Footer />

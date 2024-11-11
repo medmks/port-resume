@@ -3,7 +3,8 @@ import { SectionWrapper } from "~/Hoc";
 import { styles } from "~/utilities/style";
 import Divider from "./Divider.component";
 import { staggerContainer } from "~/utilities/motion";
-import { profileImg } from "~/assets";const Profile = () => {
+import { profileImg } from "~/assets";
+const Profile = () => {
   return (
     <motion.section
       variants={staggerContainer()}

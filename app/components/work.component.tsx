@@ -15,10 +15,7 @@ const Work = () => {
             <div className="flex justify-between items-center">
               <h2 className={`${styles.sectionHeadText} text-right`}>Works</h2>
             </div>
-            <TabsNavigate
-              filteredWork={worksexample}
-              workFilter={WorkTabs}
-            />
+            <TabsNavigate filteredWork={worksexample} workFilter={WorkTabs} />
           </div>
         </section>
       </AnimationWrapper>

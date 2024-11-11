@@ -17,7 +17,6 @@ import github from "./icons/github.png";
 import linkedIn from "./icons/linkedin.png";
 import email from "./icons/email.png";
 
-
 export {
   AraBlog,
   jobit,

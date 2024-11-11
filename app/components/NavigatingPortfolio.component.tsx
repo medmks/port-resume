@@ -4,7 +4,7 @@ import AnimationWrapper from "~/common/AnimationPresence";
 
 export let ActiveTab: React.RefObject<HTMLButtonElement>;
 export let Activelineref: React.RefObject<HTMLHRElement>;
-type IWork =   {
+type IWork = {
   type_id: number;
   image: string;
   source_code_link: string;
@@ -13,17 +13,17 @@ type IWork =   {
   url: string;
 }[];
 type ITaps = {
-  index: number,
-  TypeOfWork: string,
-  icon: string | undefined,
-  IsJsx?: boolean,
-}[]
+  index: number;
+  TypeOfWork: string;
+  icon: string | undefined;
+  IsJsx?: boolean;
+}[];
 const TabsNavigate = ({
   workFilter,
   defaultIndex = 0,
-  filteredWork
+  filteredWork,
 }: {
-  workFilter:ITaps ;
+  workFilter: ITaps;
   defaultIndex?: number;
   children?: React.ReactNode;
   filteredWork: IWork;
@@ -110,11 +110,7 @@ const TabsNavigate = ({
     </>
   );
 };
-const WorkCard = ({
-  project,
-}: {
-  project: IWork[number];
-}) => {
+const WorkCard = ({ project }: { project: IWork[number] }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <>
@@ -126,14 +122,15 @@ const WorkCard = ({
             alt={project.image}
             className="w-[495px] object-contain rounded-md "
           />
-          {project.tags[0].IT.includes("WordPress")
-          // && (
+          {
+            project.tags[0].IT.includes("WordPress")
+            // && (
             // <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
             //   <div className="  black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer ">
             //    <img src={"github"} alt="" className="w-1/2 h-1/2 object-contain" />
             //   </div>
             // </div>
-          // )
+            // )
           }
         </div>
         <div className="flex flex-row justify-between items-center p-5 px-10">
