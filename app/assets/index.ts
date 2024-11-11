@@ -13,6 +13,11 @@ import Section_2 from "./Section_2.jpg";
 import WordPressIcon from "./icons/wordPress_icon.png";
 import shopify from "./icons/shopify_Icon.png";
 
+import github from "./icons/github.png";
+import linkedIn from "./icons/linkedin.png";
+import email from "./icons/email.png";
+
+
 export {
   AraBlog,
   jobit,
@@ -24,7 +29,10 @@ export {
   wec,
   WordPressIcon,
   shopify,
-  folderStar,
+  email,
+  github,
+  linkedIn,
+  // folderStar,
   // Travelweb,
   Section_2,
   app,
