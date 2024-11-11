@@ -10,7 +10,6 @@ import {
   // BentoBox,
 } from "~/components";
 
-Navbar;
 export const meta: MetaFunction = () => {
   return [
     { title: " Developer Portfolio" },
@@ -25,6 +24,7 @@ export default function Index() {
         <div className=" sm:pt-36 pt-16 ">
           <Profile />
         </div>
+        <Navbar />
         <Aboutme />
         {/* <BentoBox /> */}
         {/* <Experience /> */}
