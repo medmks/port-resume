@@ -1,23 +1,23 @@
-import { motion, useScroll, useMotionValue } from "framer-motion";
-import { useRef, useState } from "react";
+import { motion, useScroll } from "framer-motion";
+import { useRef, useState ,useEffect} from "react";
 
 
 const NavBar = () => {
-  const [isHidden, setIsHidden] = useState(false);
   const { scrollYProgress } = useScroll();
   const lastProgressRef = useRef(0);
+  const [isHidden, setIsHidden] = useState(false);
 
-  useMotionValue(
-    (currentProgress) => {
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange((currentProgress) => {
       const difference = currentProgress - lastProgressRef.current;
       if (Math.abs(difference) > 0.01) {
         setIsHidden(difference > 0);
         lastProgressRef.current = currentProgress;
       }
-    },
-    // [scrollYProgress]
-  );
+    });
 
+    return () => unsubscribe(); // Clean up on component unmount
+  }, [scrollYProgress]);
   return (
     <motion.div
       animate={isHidden ? "hidden" : "visible"}
@@ -34,7 +34,7 @@ const NavBar = () => {
       transition={{ duration: 0.2 }}
       className="fixed top-0 z-10 flex text-white w-full justify-center pt-3"
     >
-      <nav className="flex justify-between gap-3 rounded-3xl bg-zinc-900 p-5 *:rounded-xl *:border *:border-gray-200 *:px-7 *:py-2 *:transition-colors *:duration-300 hover:*:bg-gray-200 focus-visible:*:bg-gray-200">
+      <nav className="flex font-outfit justify-between gap-3 rounded-3xl bg-zinc-900 p-5 *:rounded-xl *:border *:border-gray-200 *:px-7 *:py-2 *:transition-colors *:duration-300 hover:*:bg-gray-200 hover:*:text-black focus-visible:*:bg-gray-200">
         <a href="/" className="bg-white">
           <svg
             className="h-6 w-6"
