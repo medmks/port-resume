@@ -7,6 +7,8 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 import { ThemeModeScript } from "flowbite-react";
+import Navbar from "~/components/navbar.component";
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -50,6 +52,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="bg-customColor">
+      <Navbar />
+
         {children}
         <ScrollRestoration />
         <Scripts />

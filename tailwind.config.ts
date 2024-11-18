@@ -6,16 +6,16 @@ export default {
   theme: {
     extend: {
       animation: {
-        "move-diagonal": "move-diagonal 0.5s ease-out forwards", // adjust duration as needed
-        return: "return 0.5s ease-out forwards", // animation for returning
+        "move-diagonal": "move-diagonal 0.3s ease-out forwards", // adjust duration as needed
+        return: "return 0.3s ease-out forwards", // animation for returning
       },
       keyframes: {
         "move-diagonal": {
           "0%": { transform: "translate(0, 0)" },
-          "100%": { transform: "translate(10px, -10px)" },
+          "100%": { transform: "translate(5px, -5px)" },
         },
         return: {
-          "0%": { transform: "translate(10px, -10px)" },
+          "0%": { transform: "translate(5px, -5px)" },
           "100%": { transform: "translate(0, 0)" }, // Return to original position
         },
       },
