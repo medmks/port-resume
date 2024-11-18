@@ -1,13 +1,15 @@
 import { SectionWrapper } from "~/Hoc";
 import { styles } from "~/utilities/style";
 import Divider from "./Divider.component";
+import { motion } from "framer-motion";
+import { slideIn } from "~/utilities/motion";
 
 const Aboutme = () => {
   return (
-    <section className=" relative w-full">
-      <div className="">
-        <h2 className={`${styles.sectionHeadText}`}>About me</h2>
-      </div>
+      <motion.section className=" relative w-full">
+        <div className="">
+          <h2 className={`${styles.sectionHeadText}`}>About me</h2>
+        </div>
 
       <div>
         <p className={`${styles.sectionSubText} mt-7`}>
@@ -23,7 +25,7 @@ const Aboutme = () => {
       </div>
 
       <Divider />
-    </section>
+    </motion.section>
   );
 };
 

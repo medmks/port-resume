@@ -34,8 +34,8 @@ const NavBar = () => {
       transition={{ duration: 0.2 }}
       className="fixed top-0 z-10 flex text-white w-full justify-center pt-3"
     >
-      <nav className="flex font-outfit justify-between gap-3 rounded-3xl bg-zinc-900 p-5 *:rounded-xl *:border *:border-gray-200 *:px-7 *:py-2 *:transition-colors *:duration-300 hover:*:bg-gray-200 hover:*:text-black focus-visible:*:bg-gray-200">
-        <a href="/" className="bg-white">
+      <nav className="flex font-outfit justify-between gap-3 rounded-lg bg-zinc-900 p-5 *:rounded-lg *:border *:border-gray-200 *:px-7 *:py-2 *:transition-colors *:duration-300 hover:*:bg-gray-200 hover:*:text-black focus-visible:*:bg-gray-200">
+        <a href="/home/page" className="bg-white">
           <svg
             className="h-6 w-6"
             fill="black"
@@ -46,7 +46,7 @@ const NavBar = () => {
           </svg>
           <span className="sr-only">Home</span>
         </a>
-        <a href="/">Products</a>
+        <a href="/home/page">Products</a>
         <a href="/">Services</a>
         <a href="/">About</a>
         <a href="/">Contact</a>

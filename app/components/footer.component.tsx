@@ -4,6 +4,8 @@ import { watermelon } from "~/assets";
 import { contact_links } from "~/constants";
 import ModalComponent from "./Modal.component";
 import Link from "./link.component";
+import { motion } from "framer-motion";
+import { staggerContainer } from "~/utilities/motion";
 
 const Footer = () => {
   return (
@@ -30,13 +32,13 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-transparent mb-10 ">
+        <motion.div variants={staggerContainer()} className="border-transparent mb-10 ">
           <img
             src={watermelon}
             alt="Palestine"
             className="h-52 w-fit object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
