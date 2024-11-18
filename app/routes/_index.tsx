@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navbar from "~/components/navbar.component";
 import {
   Profile,
   Aboutme,
@@ -24,7 +23,6 @@ export default function Index() {
         <div className=" sm:pt-36 pt-16 ">
           <Profile />
         </div>
-        <Navbar />
         <Aboutme />
         {/* <BentoBox /> */}
         {/* <Experience /> */}

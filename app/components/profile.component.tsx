@@ -2,12 +2,32 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "~/Hoc";
 import { styles } from "~/utilities/style";
 import Divider from "./Divider.component";
-import { staggerContainer } from "~/utilities/motion";
 import { profileImg } from "~/assets";
 const Profile = () => {
   return (
     <motion.section
-      variants={staggerContainer()}
+    variants={{
+      hidden: {
+        opacity: 0,
+        y: -50,
+        transition: {
+          duration: 0.5,
+          type: "spring",
+          damping: 15,
+          stiffness: 100,
+        },
+      },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+          type: "spring",
+          damping: 15,
+          stiffness: 100,
+        },
+      },
+    }}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}

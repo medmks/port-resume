@@ -3,6 +3,9 @@ const styles = {
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-30 px-10 md:px-20 xs:px-10 lg:px-40 ",
 
+  heroHead:
+    "font-outfit  text-center font-normal text-white lg:text-[64px] xs:text-[58px] leading-[38px] text-[38px] lg:leading-[60px] ",
+
   heroHeadText:
     "font-outfit font-semibold text-white lg:text-[36px] xs:text-[50px] leading-[32px] text-[32px] lg:leading-[42px] ",
   heroSubText:
@@ -23,6 +26,7 @@ const styles = {
     "font-outfitsubtext font-light sm:text-[20px] text-[16px] leading-[25px] lg:leading-[25px] tracking-wider text-[#DADDE7] ",
   Modalalbel:
     " font-outfitsubtext font-normal sm:text-[14px] text-[14px] tracking-wider text-[#DADDE7]",
+
 };
 
 export { styles };

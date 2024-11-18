@@ -19,7 +19,7 @@ const SectionWrapper = ({ Component, id }: TSectionWrapperProps) =>
             opacity: 0,
             y: -50,
             transition: {
-              duration: 0.5,
+              duration: 1,
               type: "spring",
               damping: 15,
               stiffness: 100,
@@ -29,7 +29,7 @@ const SectionWrapper = ({ Component, id }: TSectionWrapperProps) =>
             opacity: 1,
             y: 0,
             transition: {
-              duration: 0.5,
+              duration: 1,
               type: "spring",
               damping: 15,
               stiffness: 100,
