@@ -7,6 +7,10 @@ import {
   github,
   linkedIn,
   email,
+  framer,
+  hostinger,
+  gith,
+  wordpress,
 } from "~/assets";
 
 export const navLinks = [
@@ -282,5 +286,27 @@ const WorkTabs = [
     icon: shopify,
   },
 ];
+const tickers = [
+  {
+    name: "frmaer",
+    logo: framer,
+  },
+  {
+    name: "hostinger",
+    color: "green-text-gradient",
+    logo: hostinger,
+  },
+  {
+    name: "wordpress",
+    color: "pink-text-gradient",
+    logo: wordpress,
 
-export { skills, experiences, projects, contact_links, worksexample, WorkTabs };
+  },
+  {
+    name: "github",
+    color: "blue-text-gradient",
+    logo: gith,
+  }
+]
+
+export { skills, experiences, projects, contact_links, worksexample, WorkTabs, tickers };

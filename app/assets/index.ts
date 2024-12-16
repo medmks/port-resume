@@ -17,6 +17,11 @@ import github from "./icons/github.png";
 import linkedIn from "./icons/linkedin.png";
 import email from "./icons/email.png";
 
+import framer from "./framer.png";
+import hostinger from "./hostinger.jpg";
+import wordpress from "./wordpress.png";
+import gith from "./gith.png";
+
 export {
   AraBlog,
   jobit,
@@ -29,6 +34,10 @@ export {
   WordPressIcon,
   shopify,
   email,
+  framer,
+  hostinger,
+  wordpress,
+  gith,
   github,
   linkedIn,
   // folderStar,
