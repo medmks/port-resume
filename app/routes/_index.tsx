@@ -2,7 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import {
   Profile,
   Aboutme,
-  // Experience,
+  Experience,
   Skills,
   Footer,
   Work,

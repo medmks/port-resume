@@ -300,13 +300,20 @@ const tickers = [
     name: "wordpress",
     color: "pink-text-gradient",
     logo: wordpress,
-
   },
   {
     name: "github",
     color: "blue-text-gradient",
     logo: gith,
-  }
-]
+  },
+];
 
-export { skills, experiences, projects, contact_links, worksexample, WorkTabs, tickers };
+export {
+  skills,
+  experiences,
+  projects,
+  contact_links,
+  worksexample,
+  WorkTabs,
+  tickers,
+};
