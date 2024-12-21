@@ -32,7 +32,10 @@ const Footer = () => {
           ))}
         </div>
 
-        <motion.div variants={staggerContainer()} className="border-transparent mb-10 ">
+        <motion.div
+          variants={staggerContainer()}
+          className="border-transparent mb-10 "
+        >
           <img
             src={watermelon}
             alt="Palestine"

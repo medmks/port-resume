@@ -6,10 +6,10 @@ import { slideIn } from "~/utilities/motion";
 
 const Aboutme = () => {
   return (
-      <motion.section className=" relative w-full">
-        <div className="">
-          <h2 className={`${styles.sectionHeadText}`}>About me</h2>
-        </div>
+    <motion.section className=" relative w-full">
+      <div className="">
+        <h2 className={`${styles.sectionHeadText}`}>About me</h2>
+      </div>
 
       <div>
         <p className={`${styles.sectionSubText} mt-7`}>
