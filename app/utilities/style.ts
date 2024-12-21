@@ -22,7 +22,7 @@ const styles = {
   sectionskillsText:
     "font-outfitsubtext font-normal sm:text-[20px] text-[18px] leading-[25px] lg:leading-[35px]  tracking-wider text-white ",
   serviceHeadText:
-    "font-outfitsubtext font-semibold sm:text-[24px] text-[22px] leading-[29px] lg:leading-[39px]  tracking-wider text-white ",
+    "font-outfitsubtext font-normal sm:text-[24px] text-[22px] leading-[29px] lg:leading-[39px]  tracking-wider text-white ",
   sectionSubText:
     "font-outfitsubtext font-light sm:text-[20px] text-[18px] leading-[25px] lg:leading-[35px]  tracking-wider text-[#DADDE7] ",
   dateText:

@@ -21,8 +21,10 @@ import framer from "./framer.png";
 import hostinger from "./hostinger.jpg";
 import wordpress from "./wordpress.png";
 import gith from "./gith.png";
+import ShopifyWhite from "./icons/Shopify-White.png";
 
 export {
+  ShopifyWhite,
   AraBlog,
   jobit,
   watermelon,
