@@ -6,24 +6,27 @@ import { styles } from "~/utilities/style";
 const ServicesComponent = () => {
   return (
     <motion.section
-      className="mt-40 max-w-[1200px]  mx-auto"
+      className="mt-40 max-w-[1200px]   mx-auto"
       variants={staggerContainer()}
     >
-      <div className=" w-full flex flex-col bg-zinc-900  rounded-md">
+
+      <div className=" w-full flex flex-col  rounded-md">
+
         {/* <h3 className={`text-center mt-5 font-outfit text-white md:text-[30px] sm:text-[30px] xs:text-[40px] text-[28px] flex gap-4 justify-center items-center mb-10`}> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M213.84,118.63a6,6,0,0,0-3.73-4.25L150.88,92.17l15-75a6,6,0,0,0-10.27-5.27l-112,120a6,6,0,0,0,2.28,9.71l59.23,22.21-15,75a6,6,0,0,0,3.14,6.52A6.07,6.07,0,0,0,96,246a6,6,0,0,0,4.39-1.91l112-120A6,6,0,0,0,213.84,118.63ZM106,220.46l11.85-59.28a6,6,0,0,0-3.77-6.8l-55.6-20.85,91.46-98L138.12,94.82a6,6,0,0,0,3.77,6.8l55.6,20.85Z"></path></svg> Services</h3> */}
         <div className="flex flex-col p-10 gap-10">
+            <div className="flex gap-3 border border-white w-fit px-4 py-2 rounded-md bg-white items-center ">
+                            <h3 className={`text-black font-normal font-outfit text-[22px]`}>Multiple Services </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ef4444" viewBox="0 0 256 256"><path d="M248,104a8,8,0,0,1-5.37,7.56L64,173.69V216a8,8,0,0,1-16,0V40a8,8,0,0,1,10.63-7.56l184,64A8,8,0,0,1,248,104Z"></path></svg>
+            </div>
           <h2 className={`${styles.SubHeadText}`}>
             Our Mission Is To Make Your Business <br /> Better Through
             Technology{" "}
           </h2>
 
-          <div className="flex gap-3 border border-white w-fit p-4 rounded-md bg-white items-center mt-5 mb-5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"></path></svg>
-            <h3 className={`text-black font-normal font-outfit text-[22px]`}>Multiple Services </h3>
-          </div>
 
-          <div className="flex">
-            <div className="w-1/3  h-72 flex flex-col justify-center gap-5 ">
+
+          <div className="flex md:flex-row flex-col gap-10">
+            <div className="w-full md:w-1/3  h-72 flex flex-col justify-center gap-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="90"
@@ -41,7 +44,7 @@ const ServicesComponent = () => {
                 and that help you reach your goals.
               </p>
             </div>
-            <div className="w-1/3  h-72 flex  flex-col justify-center gap-5 ">
+            <div className="w-full md:w-1/3  h-72 flex  flex-col justify-center gap-5 ">
               <img
                 className="w-24 h-24"
                 src={ShopifyWhite}
@@ -55,7 +58,7 @@ const ServicesComponent = () => {
                 help reach more customers.
               </p>
             </div>
-            <div className="w-1/3  h-72 flex flex-col justify-center gap-5 ">
+            <div className="w-full md:w-1/3  h-72 flex flex-col justify-center gap-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="90"
