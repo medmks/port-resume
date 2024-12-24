@@ -288,7 +288,7 @@ const WorkTabs = [
 ];
 const tickers = [
   {
-    name: "frmaer",
+    name: "framer",
     logo: framer,
   },
   {
@@ -308,6 +308,39 @@ const tickers = [
   },
 ];
 
+const stepsProcess = [
+  {
+    step: "1",
+    title: "Discover",
+    description:
+      "We'll partner with you to grasp your goals, business needs, tech requirements and constraints for a tailored approach.",
+  },
+  {
+    step: "2",
+    title: "Design",
+    description:
+      "In this phase, we collaborate with you to shape your vision into user flows,process maps, wireframes and establish the product's visual aesthetic.",
+  },
+  {
+    step: "3",
+    title: "Develop",
+    description:
+      "We begin constructing the product, employing a structured development process using sprints and rigorous quality assurance measures.",
+  },
+  {
+    step: "4",
+    title: "Deploy",
+    description:
+      "We work with you to conduct final quality assurance at this point.after everything is finished, we launch your product onto the market.",
+  },
+  {
+    step: "5",
+    title: "Maintain",
+    description:
+      "After we deploy the product, we provide ongoing maintenance that includes bug fixes, content updates, technical and design enhancements.",
+  },
+];
+
 export {
   skills,
   experiences,
@@ -316,4 +349,5 @@ export {
   worksexample,
   WorkTabs,
   tickers,
+  stepsProcess,
 };

@@ -8,7 +8,7 @@ const styles = {
   heroHeadText:
     "font-outfit font-semibold text-white lg:text-[36px] xs:text-[50px] leading-[32px] text-[32px] lg:leading-[42px] ",
   SubHeadText:
-    "font-outfit font-normal text-white lg:text-[42px] xs:text-[56px] leading-[38px] text-[56px] lg:leading-[46px] ",
+    "font-outfit font-normal text-white lg:text-[36px] xs:text-[50px] leading-[40px] text-[32px] lg:leading-[42px] ",
   heroSubText:
     "text-red-100 font-outfit font-semibold lg:text-[32px] sm:text-[26px]  xs:text-[20px] text-[24px] lg:leading-[42px] ",
   sublink:
@@ -22,7 +22,7 @@ const styles = {
   sectionskillsText:
     "font-outfitsubtext font-normal sm:text-[20px] text-[18px] leading-[25px] lg:leading-[35px]  tracking-wider text-white ",
   serviceHeadText:
-    "font-outfitsubtext font-normal sm:text-[24px] text-[22px] leading-[29px] lg:leading-[39px]  tracking-wider text-white ",
+    "font-outfitsubtext font-normal sm:text-[24px] text-[22px] leading-[29px] lg:leading-[32px]  tracking-wider text-white ",
   sectionSubText:
     "font-outfitsubtext font-light sm:text-[20px] text-[18px] leading-[25px] lg:leading-[35px]  tracking-wider text-[#DADDE7] ",
   dateText:

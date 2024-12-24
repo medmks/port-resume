@@ -1,6 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import { useRef, useState ,useEffect} from "react";
-
+import { useRef, useState, useEffect } from "react";
 
 const NavBar = () => {
   const { scrollYProgress } = useScroll();
@@ -47,7 +46,7 @@ const NavBar = () => {
           <span className="sr-only">Home</span>
         </a>
         <a href="/home/page">Products</a>
-        <a href="/">Services</a>
+        <a href="/home/page">Services</a>
         <a href="/">About</a>
         <a href="/">Contact</a>
       </nav>
