@@ -1,6 +1,7 @@
 import LogoTickerComponent from "~/components/logoTicker.component";
 import ServicesComponent from "../components/services.components";
 import HeroComponent from "~/components/hero.component";
+import ProcessLineComponent from "~/components/processLine.component";
 
 const HomePage = () => {
   return (
@@ -8,9 +9,10 @@ const HomePage = () => {
       <HeroComponent />
       <LogoTickerComponent />
       <ServicesComponent />
-      <div className="h-[690px]">
+      <ProcessLineComponent />
+      {/* <div className="">
         <p></p>
-      </div>
+      </div> */}
     </main>
   );
 };
